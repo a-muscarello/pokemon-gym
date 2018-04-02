@@ -42,9 +42,9 @@ class Gym {
     });
 
     if (this.squad[i].type.length === 2) {
-      $( "#image-display" ).css("background", `linear-gradient(90deg, var(--${this.squad[i].type[0]}) 50%, var(--${this.squad[i].type[1]}) 50%)`);
+      $( "#main-body" ).css("background", `linear-gradient(90deg, var(--${this.squad[i].type[0]}) 50%, var(--${this.squad[i].type[1]}) 50%)`);
     } else {
-      $( "#image-display" ).css("background", `var(--${this.squad[i].type[0]})`);
+      $( "#main-body" ).css("background", `var(--${this.squad[i].type[0]})`);
     }
 
   }
