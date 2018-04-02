@@ -9,13 +9,14 @@
     <title>mokaymon's pokedex</title>
   </head>
   <body>
-    <div id="pokedex">
-
       <div id="main-body">
-        <div id="big-blue-light"></div>
-        <div id="mini-red-light"></div>
-        <div id="mini-yellow-light"></div>
-        <div id="mini-green-light"></div>
+        <div id="info-display">
+          <div id="biometrics"></div>
+          <div id="base-stats"></div>
+          <div id="abilities"></div>
+          <div id="types"></div>
+        </div>
+        <div id="left-arrow"></div>
         <div id="image-display-container">
           <div id="image-display">
           </div>
@@ -32,37 +33,11 @@
             </div>
           </div>
         </div>
-        <div id="left-arrow"></div>
-        <div id="name-display"></div>
         <div id="right-arrow"></div>
+        <div id="arena"></div>
+        <div id="name-display"></div>
       </div>
 
-      <div id="separator">
-      </div>
-
-      <div id="inside-flap">
-        <div id="info-display">
-          <div id="hide-yo-stats">
-            <div id="biometrics"></div>
-            <div id="base-stats"></div>
-            <div id="abilities"></div>
-            <div id="types"></div>
-          </div>
-        </div>
-        <div id="stats-button"><h1>STATS</h1></div>
-        <form id="show-form">
-          <input id="show-input-field" type="text" name="pokemon" placeholder="Enter name"><br>
-          <div id="show-button"><h1>SHOW</h1></div>
-        </form>
-        <form id="add-form">
-          <input id="add-input-field" type="text" name="pokemon" placeholder="Enter ID/name"><br>
-          <div id="add-button"><h1>ADD</h1></div>
-        </form>
-      </div>
-      <!-- fix bottom box shadow being cut off in mobile -->
-      <div id="spacing"></div>
-
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="main.js" charset="utf-8"></script>
