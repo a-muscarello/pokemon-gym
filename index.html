@@ -6,45 +6,46 @@
     <link rel="stylesheet" href="node_modules/pokemon-font/css/pokemon-font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="main.css">
-    <title>mokaymon's pokedex</title>
+    <title>Saffron Gym</title>
   </head>
   <body>
-    
       <div id="main-body">
         <div id="gym-name"><h1>Saffron Gym</h1></div>
-        <div id="name-display"></div>
-
-        <div id="info-display">
-          <div id="biometrics"></div>
-          <div id="base-stats"></div>
-          <div id="abilities"></div>
-          <div id="types"></div>
-          
-        </div>
-        <div id="left-arrow"></div>
-        <div id="image-display-container">
-          <div id="image-display"></div>
-          <!-- materialize preloader -->
-          <div id="image-preloader" class="preloader-wrapper active">
-            <div class="spinner-layer spinner-red-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div><div class="gap-patch">
-                <div class="circle"></div>
-              </div><div class="circle-clipper right">
-                <div class="circle"></div>
-              
-              </div>
-            </div>
+        <div id="backdrop">
+          <div id="stage-light"></div>
+          <div id="lamp"></div>
+          <div id="info-display">
+            <div id="biometrics"></div>
+            <div id="base-stats"></div>
+            <div id="abilities"></div>
+            <div id="types"></div>
           </div>
+
+          <div id="stage">
+              <div id="left-arrow"></div>
+                <div id="image-display"></div>
+                <!-- materialize preloader -->
+                <div id="image-preloader" class="preloader-wrapper active">
+                  <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+              <div id="right-arrow"></div>
+            </div>
+
+            <div id="name-display"></div>
+
         </div>
-        <div id="right-arrow"></div>
-        <div id="arena"></div>
-        <!-- <div id="name-display"></div> -->
       </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="main.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script> --> <!-- TODO: disabled for spotlight testing
   </body>
 </html>

@@ -1,41 +1,63 @@
-:root {
-  --normal: #A8A878;
-  --fighting: #C03028;
-  --flying: #A890F0;
-  --poison: #A040A0;
-  --ground: #E0C068;
-  --rock: #B8A038;
-  --bug: #A8B820;
-  --ghost: #705898;
-  --steel: #B8B8D0;
-  --fire: #F08030;
-  --water: #6890F0;
-  --grass: #78C850;
-  --electric: #F8D030;
-  --psychic: #F85888;
-  --ice: #98D8D8;
-  --dragon: #7038F8;
-  --dark: #705848;
-  --fairy: #EE99AC;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
-#main-body {
+body {
   width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#main-body {
+  width: 100vw;
   height: 100vh;
+}
+
+#backdrop {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(black, #1C315B 90%, #1C315B);
+}
+
+#stage {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#stage-light {
+  position: absolute;
+  width: 70vh;
+  height: 100%;
+  background-image: radial-gradient(ellipse closest-side at 50% 82%, #5478AD, #5478AD00 100%);
+}
+
+#lamp {
+  position: absolute;
+  width: 40vh;
+  height: 400vh;
+  background-image: radial-gradient(ellipse, #5478AD50, #5478AD20 20%, #5478AD00 35%);
+  top: -220vh;
+  transform: perspective(23vh) rotateX(30deg);
 }
 
 #gym-name {
   position: absolute;
   top: 10px;
+  left: 10px;
+  z-index: 999;
 }
 
 h1, h2, h3 {
@@ -50,7 +72,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 18px;
-  color:#0f0f0f;
+  color: white;
   text-align: center;
 }
 
@@ -74,18 +96,6 @@ h3 {
   right: 0;
 }
 
-#image-display-container {
-  width: 444px;
-  height: 325px;
-  border-radius: 25px;
-  top: 375px;
-  /* background-color: #DDD; */
-  background: transparent;
-  /* left: 150px; */
-  /* box-shadow: -2px 2px 1px #666, 2px -2px 0px #e6e6e6; */
-  position: absolute;
-}
-
 #image-display {
   width: 394px;
   height: 275px;
@@ -93,18 +103,15 @@ h3 {
   background: transparent;
   top: 25px;
   left: 25px;
-  /* background: #FFF; */
-  /* box-shadow: inset 1px 1px 10px #666, inset -1px -1px 10px #666; */
-  position: absolute;
 }
 
 .pokemon-image {
-  width: 160px;
-  height: 160px;
+  width: 384px;
+  height: 384px;
   margin: auto;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 170px;
   right: 0;
   position: absolute;
 }
@@ -114,8 +121,9 @@ h3 {
   height: 264px;
   border-radius: 6.25px;
   background-color: #EEE;
-  top: 100px;
-  /* left: 161px; */
+  /* top: 100px; */
+  top: 70px;
+  left: 10px;
   padding: 10px;
   box-shadow: inset 1px 1px 10px #666, inset -1px -1px 10px #666;
   position: absolute;
@@ -131,13 +139,16 @@ h3 {
 #left-arrow, #right-arrow {
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
-  position: absolute;
-  top: 507px;
 }
 
 #left-arrow {
-  border-right: 30px solid #333;
-  left: 85px;
+  border-right: 30px solid #999;
+  padding-left: 25px;
+}
+
+#right-arrow {
+  border-left: 30px solid #999;
+  padding-right: 25px;
 }
 
 #name-display {
@@ -146,14 +157,9 @@ h3 {
   border-radius: 6.25px;
   text-align: center;
   background-color: #0f0f0f;
-  bottom: 30px;
-  /*left: 272px; */
+  bottom: 10px;
   padding: 10px 15px;
   box-shadow: inset 1px 1px 10px #666, inset -1px -1px 10px #666;
   position: absolute;
-}
-
-#right-arrow {
-  border-left: 30px solid #333;
-  right: 85px;
+  display: none;
 }
