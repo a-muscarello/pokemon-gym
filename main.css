@@ -26,11 +26,16 @@
 
 #main-body {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   /* position: absolute; */
+}
+
+#gym-name {
+  position: absolute;
+  top: 10px;
 }
 
 h1, h2, h3 {
@@ -52,7 +57,7 @@ h1 {
 h2 {
   font-size: 16px;
   line-height: 150%;
-  color: #666;
+  color: #b5c0d1;
 }
 
 h3 {
@@ -73,10 +78,11 @@ h3 {
   width: 444px;
   height: 325px;
   border-radius: 25px;
-  background-color: #DDD;
   top: 375px;
+  /* background-color: #DDD; */
+  background: transparent;
   /* left: 150px; */
-  box-shadow: -2px 2px 1px #666, 2px -2px 0px #e6e6e6;
+  /* box-shadow: -2px 2px 1px #666, 2px -2px 0px #e6e6e6; */
   position: absolute;
 }
 
@@ -84,10 +90,11 @@ h3 {
   width: 394px;
   height: 275px;
   border-radius: 6.25px;
-  background: #FFF;
+  background: transparent;
   top: 25px;
   left: 25px;
-  box-shadow: inset 1px 1px 10px #666, inset -1px -1px 10px #666;
+  /* background: #FFF; */
+  /* box-shadow: inset 1px 1px 10px #666, inset -1px -1px 10px #666; */
   position: absolute;
 }
 
@@ -103,7 +110,7 @@ h3 {
 }
 
 #info-display {
-  width: 419px;
+  width: 450px;
   height: 264px;
   border-radius: 6.25px;
   background-color: #EEE;
@@ -137,8 +144,9 @@ h3 {
   width: 200px;
   height: 70px;
   border-radius: 6.25px;
+  text-align: center;
   background-color: #0f0f0f;
-  top: 707px;
+  bottom: 30px;
   /*left: 272px; */
   padding: 10px 15px;
   box-shadow: inset 1px 1px 10px #666, inset -1px -1px 10px #666;
