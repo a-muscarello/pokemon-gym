@@ -110,3 +110,9 @@ $.when(createPokemon(130)
     saffron.show(0); // pass in 0 by default to show first pokemon in squad
     $(" #name-display ").show();
 });
+
+$("#image-display").hover(function(e) {
+  $("#info-display").fadeIn(1000)
+}, function(e) {
+  $("#info-display").fadeOut("slow")
+});
