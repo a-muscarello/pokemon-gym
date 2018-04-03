@@ -111,8 +111,8 @@ $.when(createPokemon(130)
     $(" #name-display ").show();
 });
 
-$("#image-display").hover(function(e) {
-  $("#info-display").fadeIn(1000)
+$(".pokemon-image").hover(function(e) {
+  $("#info-display").fadeIn("fast")
 }, function(e) {
-  $("#info-display").fadeOut("slow")
+  $("#info-display").fadeOut("fast")
 });
