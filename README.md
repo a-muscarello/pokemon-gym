@@ -24,4 +24,16 @@
 * Created a hover for the Pokemon image that shows the stats when image is hovered-over
 * Made changes to title, background and flexbox
 
+### Desktop view:
+![desktop demo](demo-lapras.png)
+![alt text](images/Saffron Gym.png "Description goes here")
 
+## Features:
+* "Stats" that appear when Pokémon image is hovered-over
+* "Arrow" button that navigates to a new Pokémon by making an AJAX call to the API
+* Materialize Preloader that improves the UX while AJAX calls are being made
+* Spotlight background to create a gym-like feel
+
+## Acknowledgements
+* [Pokémon GAME BOY Font](https://github.com/Superpencil/pokemon-font/) by Superpencil
+* Inspiration: [Pokedex.org](https://www.pokedex.org/)
